@@ -1,0 +1,31 @@
+{
+    "CONFIG": {
+        "START_DATE": "2025-02-03",
+        "END_DATE": "2026-02-04" /* A data de fim é opcional, caso não seja colocada, será alimentada com o dia de hoje  */
+    },
+    "DIR" : { /* O nome das pastas geradas é decidido pelo usuário */
+        "CVM": {
+            "CSV_NAME": "csv",
+            "ZIP_NAME": "zip",
+            "DATA_NAME": "processed"
+        },
+        "CDI": "cdi"
+    },
+    "INVESTMENTS": { /* Faça uma lista com os investimentos que selecionou */
+        "01.234.5678/0000-90": {
+            "Fundo": "Investimento ideal",
+            "HistoricoCompraDatas": ["2025-02-03"] /* Pelo momento, há apenas suporte uma data */
+        },
+        "36.966.636/0001-30": {
+            "Fundo": "Investimento teorico",
+            "HistoricoCompraDatas": ["2025-02-03"]
+        },
+    },
+    "GRAPHIC": {
+        "INVESTMENT_LIST": ["52.324.414/0001-70", "36.966.636/0001-30"],
+        "METRICS": { /* Lista com as métricas usadas nos gráficos de valorização */
+            "CDI": true,
+            "Inflacao": false
+        }
+    }
+}
