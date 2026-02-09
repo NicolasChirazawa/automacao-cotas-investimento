@@ -24,12 +24,13 @@ choque destes com métricas. <br>
 
 <a href="https://github.com/NicolasChirazawa/automacao-cotas-investimento.git">Clone</a> o projeto ou <a href="https://github.com/NicolasChirazawa/automacao-cotas-investimento/archive/refs/heads/main.zip">baixe-o</a>; <br>
 
-```
-gh repo clone NicolasChirazawa/automacao-cotas-investimento
-```
-
 <h3>Baixar dependências</h3>
-Há um arquivo na raiz do projeto <em>('./requirements')</em> que auxilia a instalação das mesmas. <br> <br>
+
+Há um arquivo na raiz do projeto <em>./requirements.txt</em> que mostra dependências irão ser instaladas, para usar o projeto, basta usar o comando abaixo:
+
+```bash
+pip install -r requirements.txt
+```
 
 <h3>⚙️ Como configurar?</h3>
 
