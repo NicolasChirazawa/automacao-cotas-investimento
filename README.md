@@ -38,5 +38,12 @@ pip install -r requirements.txt
 Há um arquivo no caminho '/app/option_template.json' para configurar o projeto. <br> <br>
 
 <h2 name="inicializar">📄 Funcionalidades </h2>
+Há dois módulos principais:
 
+<h3>🗂️ Planilhas</h3>
+As planilhas são geradas na extensão '.CSV' <a href='https://en.wikipedia.org/wiki/Comma-separated_values'>(Comma Separated Values)</a> e podem ser reaproveitadas fora do sistema caso seja do seu interesse.
 
+<h4>CVM</h4>
+A planilha de 'CVM' <a href='https://www.infomoney.com.br/guias/cvm-comissao-de-valores-mobiliarios/'>(Comissão de Valores Mobiliários)</a> utiliza dos dados fornecidos diariamente, para construir uma planilha geral com os dados acumu
+
+<h3>📈 Gráfico</h3>
