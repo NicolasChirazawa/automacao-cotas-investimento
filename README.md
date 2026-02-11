@@ -6,12 +6,13 @@
 <div align="center">
   • <a href=#descricao>Descrição</a> 
   • <a href=#inicializar>Inicializando</a> 
+  • <a href=#inicializar>Funcionalidades</a>
   •
 </div>
 
 <h2 name="descricao">💻 Descrição</h2>
 Um projeto abrangente sobre <Strong>fundos de investimento</Strong> (multimercado, pósfixado...) que se propõem a automatizar coleta de dados, e elucidar ideias a partir do 
-choque destes com métricas. <br> 
+choque destes com métricas, altamente customizável. <br> 
 
 <h2 name="inicializar">🚀 Iniciando</h2>
 
@@ -35,7 +36,7 @@ pip install -r requirements.txt
 <h3>⚙️ Como configurar?</h3>
 
 <h4>'JSON'</h4>
-Há um arquivo no caminho '/app/option_template.json' para configurar o projeto. <br> <br>
+Há um arquivo no caminho <em>'/app/option_template.json'</em> para configurar o projeto. <br> <br>
 
 <h2 name="inicializar">📄 Funcionalidades </h2>
 Há dois módulos principais:
@@ -43,7 +44,9 @@ Há dois módulos principais:
 <h3>🗂️ Planilhas</h3>
 As planilhas são geradas na extensão '.CSV' <a href='https://en.wikipedia.org/wiki/Comma-separated_values'>(Comma Separated Values)</a> e podem ser reaproveitadas fora do sistema caso seja do seu interesse.
 
-<h4>CVM</h4>
-A planilha de 'CVM' <a href='https://www.infomoney.com.br/guias/cvm-comissao-de-valores-mobiliarios/'>(Comissão de Valores Mobiliários)</a> utiliza dos dados fornecidos diariamente, para construir uma planilha geral com os dados acumu
+<h4>CVM</h4
+É baixado as planilhas da 'CVM' <a href='https://www.infomoney.com.br/guias/cvm-comissao-de-valores-mobiliarios/'>(Comissão de Valores Mobiliários)</a> baseado nos meses da sua escolha*. Após o 'download', é fornecido a opção da filtragem pelos investimentos que também escolheu.
+
+<h6>*Desde de maio de 2022, os arquivos passavam a ser csv zippado.</h6>
 
 <h3>📈 Gráfico</h3>
