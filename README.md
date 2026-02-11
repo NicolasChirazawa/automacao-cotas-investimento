@@ -42,11 +42,16 @@ Há um arquivo no caminho <em>'/app/option_template.json'</em> para configurar o
 Há dois módulos principais:
 
 <h3>🗂️ Planilhas</h3>
-As planilhas são geradas na extensão '.CSV' <a href='https://en.wikipedia.org/wiki/Comma-separated_values'>(Comma Separated Values)</a> e podem ser reaproveitadas fora do sistema caso seja do seu interesse.
+As planilhas são geradas na extensão '.csv' <a href='https://en.wikipedia.org/wiki/Comma-separated_values'>(Comma Separated Values)</a> e podem ser reaproveitadas fora do sistema caso seja do seu interesse.
 
-<h4>CVM</h4
+<h4>CVM</h4>
 É baixado as planilhas da 'CVM' <a href='https://www.infomoney.com.br/guias/cvm-comissao-de-valores-mobiliarios/'>(Comissão de Valores Mobiliários)</a> baseado nos meses da sua escolha*. Após o 'download', é fornecido a opção da filtragem pelos investimentos que também escolheu.
 
-<h6>*Desde de maio de 2022, os arquivos passavam a ser csv zippado.</h6>
+<h6>*Desde de maio de 2022, os arquivos passavam a ser '.csv' zippado.</h6>
+
+<h4>Métricas</h4>
+É consultado algumas das bases de dados que o 'Ipeadata' disponibiliza para construir métricas que serão importantes para comparações da evolução do histórico de investimentos. <br>
+
+- CDI: 
 
 <h3>📈 Gráfico</h3>
