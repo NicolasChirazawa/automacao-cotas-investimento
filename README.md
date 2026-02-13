@@ -5,27 +5,27 @@
 
 <div align="center">
   • <a href=#descricao>Descrição</a> 
-  • <a href=#inicializar>Inicializando</a> 
-  • <a href=#estrutura>Estrutura</a> 
+  • <a href=#inicializar>Como iniciar?</a> 
   • <a href=#funcionalidades>Funcionalidades</a>
+  • <a href=#estrutura>Estrutura</a> 
   •
 </div>
 
-<h2 name="descricao">💻 Descrição</h2>
-Um projeto para automatizar a coleta de dados de investimento e analisar, baseado no histórico destes, e com medidos macroeconômicos, como o CDI e a inflação. <br> 
+<h2 name="descricao">Descrição</h2>
+Um projeto para automatizar a coleta de dados de investimento e analisar entre choques destes com medidos macroeconômicos, a exemplo do CDI e da inflação. <br> 
 
-<h2 name="inicializar">🚀 Iniciando</h2>
+<h2 name="inicializar">Como iniciar</h2>
 
-<h3>Softwares necessários</h3>
+<h3>1° Passo: Softwares necessários</h3>
 
 • <a href="https://www.python.org/ftp/python/pymanager/python-manager-25.2.msix">Python</a>;
 <h6>Recomendação: Um editor de código (<a href="https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user">Visual Studio Code</a>) que tenha suporte ao 'Jupyter Notebook'; </h6>
 
-<h3>Meios de acessar o projeto</h3>
+<h3>2° Passo: Meios de acessar o projeto</h3>
 
 <a href="https://github.com/NicolasChirazawa/automacao-cotas-investimento.git">Clone-o</a> ou <a href="https://github.com/NicolasChirazawa/automacao-cotas-investimento/archive/refs/heads/main.zip">baixe-o</a>; <br>
 
-<h3>Baixar dependências</h3>
+<h3>3° Passo: Instalação de dependências</h3>
 
 Há um arquivo na raiz do projeto <em>./requirements.txt</em> que dispõem as dependências a serem instaladas. Para utilizar usar o projeto, com a mesma estrutura que desenvolvi, basta usar o comando abaixo:
 
@@ -33,17 +33,44 @@ Há um arquivo na raiz do projeto <em>./requirements.txt</em> que dispõem as de
 pip install -r requirements.txt
 ```
 
-<h3>⚙️ Como configurar?</h3>
-
-<h4>'JSON'</h4>
+<h3>4° Passo: Configuração do JSON</h3>
 Há um arquivo no caminho <em>'/app/option_template.json'</em> para configurar as opções disponibilizadas no projeto. <br> <br>
+
+<h2 name="funcionalidades">Funcionalidades </h2>
+Há dois módulos principais de funcionalidades:
+
+<h3>🗂️ Planilhas</h3>
+
+<details>
+  <summary> <h4>CVM</h4> </summary>
+  
+  A CVM (<a href='https://www.infomoney.com.br/guias/cvm-comissao-de-valores-mobiliarios/'>Comissão de Valores Mobiliários</a>) é um órgão fundamental para construção 
+  de segurança do investidor, realizando a fiscalização e mantendo a transparência do mercado de capital brasileiro.
+    <br> <br>
+    • Download e dezip de planilhas da CVM através de datas a sua escolha [1]; <br>
+    • Criação e filtragem de data das planilhas por investimento; <br>
+    • Cálculo da valorização da cota de investimento; <br> 
+    <h6>[1]: Desde de maio de 2022, os arquivos passavam a ser '.csv' zippados.</h6>
+</details> 
+
+<details>
+  <summary> <h4>Métricas - Ipeadata</h4> </summary>
+
+  O Ipeadata (<a href="https://www.ipea.gov.br/portal/component/assuntos/interna?id=216">Instituto de Pesquisa Econômica Avançada</a>) é uma base dados pública que abrange séries históricas anuais, mensais e diárias sobre diversos registros macroeconômicos, financeiros, regionais e sociais do Brasil. Está sendo trabalhado com as seguintes métricas:
+  
+  - CDI (Certificado de Depósito Interbancário);
+  - Inflação - em breve -;
+    <br> <br>
+</details> 
+
+<h3>📈 Gráficos</h3>
 
 <h2 name="estrutura">📦 Estrutura do Projeto </h2>
 
 ```
 ┌─ app
 │  ┌─ * data
-│  │  ├─ /*/Todos os daods gerados ao longo do projeto */
+│  │  ├─ /*/Todos os dados baixados e processados ao longo do projeto */
 │  ├─ options_template.json
 │  └─ src
 │     ├─ graphics
@@ -64,22 +91,3 @@ Há um arquivo no caminho <em>'/app/option_template.json'</em> para configurar a
 │        └─ functions
 │           └─ date_transform.py
 ```
-
-<h2 name="funcionalidades">📄 Funcionalidades </h2>
-Há dois módulos principais:
-
-<h3>🗂️ Planilhas</h3>
-As planilhas são geradas na extensão '.csv' (<a href='https://en.wikipedia.org/wiki/Comma-separated_values'>Comma Separated Values</a>) e podem ser reaproveitadas fora do sistema caso seja do seu interesse.
-
-<h4>CVM</h4>
-É baixado as planilhas da 'CVM' (<a href='https://www.infomoney.com.br/guias/cvm-comissao-de-valores-mobiliarios/'>Comissão de Valores Mobiliários</a>) baseado nos meses da sua escolha*. Após o 'download', é fornecido a opção da filtragem pelos investimentos que também decidiu.
-
-<h6>* Desde de maio de 2022, os arquivos passavam a ser '.csv' zippados.</h6>
-
-<h4>Métricas</h4>
-É consultado algumas das bases de dados que o 'Ipeadata' disponibiliza para construir métricas que serão importantes para comparações da evolução do histórico de seus investimentos escolhidos. Estas são: <br> <br>
-
-- CDI: Certificado de D  epósito interbancário;
-- Inflação;
-
-<h3>📈 Gráficos</h3>
