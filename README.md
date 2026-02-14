@@ -1,4 +1,4 @@
-<h1 align="center">📊 Automação de Cotas de Investimento</h1>
+<h1 align="center">Automação de Cotas de Investimento</h1>
 
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=%20&labelColor=9cccf4&message=Python&color=grey&style=for-the-badge&logo=python&logoColor=black"/>
@@ -12,7 +12,7 @@
   <a href="#estrutura-do-projeto">Estrutura</a>
 </p>
 
-## 📖 Descrição
+<h2 name="descricao"> Descrição </h2>
 
 Projeto de automação para coleta, processamento e análise de dados de fundos de investimento, comparando a valorização de cotas com indicadores macroeconômicos como CDI e inflação (IPCA).
 
@@ -20,7 +20,7 @@ O objetivo é construir uma base estruturada para análise histórica e geraçã
 
 ---
 
-## 🚀 Como iniciar
+<h2 name="como-iniciar">Como iniciar</h2>
 
 ### 1️⃣ Softwares necessários
 
@@ -60,11 +60,11 @@ Utilize-o como base para configurar as opções do projeto.
 
 ---
 
-## ⚙️ Funcionalidades
+<h2 name="funcionalidades"> Funcionalidades </h2>
 
 O projeto está dividido em dois principais módulos:
 
-### 📁 Planilhas
+### Planilhas
 
 <details>
   <summary><strong>CVM</strong></summary>
@@ -73,9 +73,9 @@ A CVM ([Comissão de Valores Mobiliários](https://www.infomoney.com.br/guias/cv
 
 Funcionalidades:
 
-- Download e descompactação de planilhas `.zip` da CVM por período selecionado  
-- Criação e filtragem de dados por investimento  
-- Cálculo da valorização da cota  
+- Download e descompactação de planilhas `.zip` da CVM por período selecionado;  
+- Criação e filtragem de dados por investimento;
+- Cálculo da valorização da cota;
 
 <sub>Desde maio de 2022, os arquivos passaram a ser disponibilizados em formato `.csv` compactado.</sub>
 
@@ -104,21 +104,22 @@ Taxa de juros de empréstimos interbancários de curtíssimo prazo, amplamente u
 
 Resultados gerados:
 
-- Construção de planilhas do CDI diário  
-- Cálculo da valorização acumulada do CDI  
+- Construção de planilhas do CDI diário;
+- Cálculo da valorização acumulada do CDI;
 
 </details>
 
 ---
 
-### 📈 Gráficos
+### Gráficos
 
-- Geração de gráficos comparativos entre valorização de cotas e indicadores macroeconômicos  
-- Visualização histórica para apoio à análise de performance  
+- Geração de gráfico comparativo entre o preço de cotas dado um período de tempo;
+- Valorização de cota perante a indicadores econômicos; - Em breve -
+- Simulação de valor de resgate; - Em breve -
 
 ---
 
-## 🗂 Estrutura do Projeto
+<h2 name="estrutura-do-projeto"> Estrutura do Projeto </h2>
 
 ```
 app
@@ -144,7 +145,6 @@ app
         └── functions
             └── date_transform.py
 ```
-
 ---
 
 ## 🎯 Objetivo
