@@ -39,7 +39,7 @@ Há um arquivo no caminho <em>'/app/option_template.json'</em> para configurar a
 <h2 name="funcionalidades">Funcionalidades </h2>
 Há dois módulos principais de funcionalidades:
 
-<h3>🗂️ Planilhas</h3>
+<h3>Planilhas</h3>
 
 <details>
   <summary> <h4>CVM</h4> </summary>
@@ -78,9 +78,9 @@ Há dois módulos principais de funcionalidades:
   •  Valorização do CDI diariamente; <br>
 </details> 
 
-<h3>📈 Gráficos</h3>
+<h3>Gráficos</h3>
 
-<h2 name="estrutura">📦 Estrutura do Projeto </h2>
+<h2 name="estrutura">Estrutura do Projeto </h2>
 
 ```
 ┌─ app
