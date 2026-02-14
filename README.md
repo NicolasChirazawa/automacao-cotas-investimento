@@ -146,7 +146,3 @@ app
             └── date_transform.py
 ```
 ---
-
-## 🎯 Objetivo
-
-Construir uma base automatizada para análise de valorização de cotas de investimento, permitindo comparação estruturada com indicadores macroeconômicos.
