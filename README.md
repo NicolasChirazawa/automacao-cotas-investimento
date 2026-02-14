@@ -96,7 +96,7 @@ Taxa de juros de empréstimos interbancários de curtíssimo prazo, amplamente u
 </details>
 
 <details>
-  <summary><strong>Inflação (IPCA)</strong></summary>
+  <summary><strong> 🔜 Inflação (IPCA)</strong></summary>
 
 Índice Nacional de Preços ao Consumidor Amplo, utilizado como principal indicador oficial de inflação no Brasil.
 
@@ -113,9 +113,16 @@ Resultados gerados:
 
 ### Gráficos
 
-- Geração de gráfico comparativo entre o preço de cotas dado um período de tempo;
-- Valorização de cota perante a indicadores econômicos; - Em breve -
-- Simulação de valor de resgate; - Em breve -
+  <details>
+    <summary>Geração de gráfico comparativo entre o preço de cotas dado um período de tempo;</summary>
+    <img src="https://raw.githubusercontent.com/NicolasChirazawa/automacao-cotas-investimento/refs/heads/main/imgs/Screenshot_1.png">
+  </details>
+  <details>
+    <summary> 🔜 Valorização de cota perante a indicadores econômicos; </summary>
+  </details>
+  <details>
+    <summary> 🔜 Simulação de valor de resgate;</summary>
+  </details>
 
 ---
 
