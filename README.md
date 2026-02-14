@@ -47,20 +47,35 @@ Há dois módulos principais de funcionalidades:
   A CVM (<a href='https://www.infomoney.com.br/guias/cvm-comissao-de-valores-mobiliarios/'>Comissão de Valores Mobiliários</a>) é um órgão fundamental para construção 
   de segurança do investidor, realizando a fiscalização e mantendo a transparência do mercado de capital brasileiro.
     <br> <br>
+    ㅤㅤ
     • Download e dezip de planilhas da CVM através de datas a sua escolha [1]; <br>
     • Criação e filtragem de data das planilhas por investimento; <br>
     • Cálculo da valorização da cota de investimento; <br> 
+    ㅤㅤ
     <h6>[1]: Desde de maio de 2022, os arquivos passavam a ser '.csv' zippados.</h6>
 </details> 
 
 <details>
   <summary> <h4>Métricas - Ipeadata</h4> </summary>
-
-  O Ipeadata (<a href="https://www.ipea.gov.br/portal/component/assuntos/interna?id=216">Instituto de Pesquisa Econômica Avançada</a>) é uma base dados pública que abrange séries históricas anuais, mensais e diárias sobre diversos registros macroeconômicos, financeiros, regionais e sociais do Brasil. Está sendo trabalhado com as seguintes métricas:
   
-  - CDI (Certificado de Depósito Interbancário);
-  - Inflação - em breve -;
+  O Ipeadata (<a href="https://www.ipea.gov.br/portal/component/assuntos/interna?id=216">Instituto de Pesquisa Econômica Avançada</a>) é uma base dados pública que abrange séries     históricas anuais, mensais e diárias sobre diversos registros macroeconômicos, financeiros, regionais e sociais do Brasil. Dentro deste projeto, hoje, está sendo trabalhado com as seguintes métricas:
+  
+  <details>
+      <summary>CDI (Certificado de Depósito Interbancário)</summary>
+      O CDI é uma taxa de empréstimo entre bancos feita a curtíssimos prazos (basicamente equiparente a taxa Selic). <br>
+      Um investimento de renda fixa deve ser no mínimo 100% do CDI, nesse sentido, rendas varíaveis tendem a recompensar mais pelo seu risco.
+  </details>
+  
+  <details>
+    <summary>Inflação</summary>
+    A taxa que reflete a desvalorização do poder de compra, é medido pelo IPCA (Índice nacional de Preço ao Consumidor Amplo). <br>
+    Suas principais causas são: 
+  </details>
+  ㅤㅤ
+    Oferecendo os seguintes resultados: 
     <br> <br>
+  •  Construção de planilhas do CDI diário; <br>
+  •  Valorização do CDI diariamente; <br>
 </details> 
 
 <h3>📈 Gráficos</h3>
@@ -89,5 +104,5 @@ Há dois módulos principais de funcionalidades:
 │        │  ├─ ipea.py
 │        │  └─ pandas_dataframe.py
 │        └─ functions
-│           └─ date_transform.py
+└─           └─ date_transform.py
 ```
