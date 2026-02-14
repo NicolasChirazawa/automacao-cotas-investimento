@@ -62,18 +62,17 @@ Há dois módulos principais de funcionalidades:
   
   <details>
       <summary>CDI (Certificado de Depósito Interbancário)</summary>
-      O CDI é uma taxa de empréstimo entre bancos feita a curtíssimos prazos (basicamente equiparente a taxa Selic). <br>
-      Um investimento de renda fixa deve ser no mínimo 100% do CDI, nesse sentido, rendas varíaveis tendem a recompensar mais pelo seu risco.
+      O CDI é uma taxa de empréstimo (juros) entre bancos feita a curtíssimos prazos (basicamente equiparente a taxa Selic). <br>
+      É utilizada como um indexador de investimentos, CDBs, LCIs, LCAs e fundos.
   </details>
   
   <details>
     <summary>Inflação</summary>
     A taxa que reflete a desvalorização do poder de compra, é medido pelo IPCA (Índice nacional de Preço ao Consumidor Amplo). <br>
-    Suas principais causas são: 
   </details>
   ㅤㅤ
-    Oferecendo os seguintes resultados: 
-    <br> <br>
+  Oferecendo os seguintes resultados: 
+  <br>
   •  Construção de planilhas do CDI diário; <br>
   •  Valorização do CDI diariamente; <br>
 </details> 
