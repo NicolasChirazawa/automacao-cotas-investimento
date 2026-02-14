@@ -1,107 +1,152 @@
-<div align=center>
+<h1 align="center">📊 Automação de Cotas de Investimento</h1>
+
+<p align="center">
   <img src="https://img.shields.io/static/v1?label=%20&labelColor=9cccf4&message=Python&color=grey&style=for-the-badge&logo=python&logoColor=black"/>
   <img src="https://img.shields.io/static/v1?label=%20&labelColor=fcbe96&message=Jupyter&color=grey&style=for-the-badge&logo=jupyter&logoColor=black"/>
-</div> <br>
+</p>
 
-<div align="center">
-  • <a href=#descricao>Descrição</a> 
-  • <a href=#inicializar>Como iniciar?</a> 
-  • <a href=#funcionalidades>Funcionalidades</a>
-  • <a href=#estrutura>Estrutura</a> 
-  •
-</div>
+<p align="center">
+  <a href="#descricao">Descrição</a> •
+  <a href="#como-iniciar">Como iniciar</a> •
+  <a href="#funcionalidades">Funcionalidades</a> •
+  <a href="#estrutura-do-projeto">Estrutura</a>
+</p>
 
-<h2 name="descricao">Descrição</h2>
-Um projeto para automatizar a coleta de dados de investimento e analisar entre choques destes com medidos macroeconômicos, a exemplo do CDI e da inflação. <br> 
+## 📖 Descrição
 
-<h2 name="inicializar">Como iniciar</h2>
+Projeto de automação para coleta, processamento e análise de dados de fundos de investimento, comparando a valorização de cotas com indicadores macroeconômicos como CDI e inflação (IPCA).
 
-<h3>1° Passo: Softwares necessários</h3>
+O objetivo é construir uma base estruturada para análise histórica e geração de gráficos comparativos.
 
-• <a href="https://www.python.org/ftp/python/pymanager/python-manager-25.2.msix">Python</a>;
-<h6>Recomendação: Um editor de código (<a href="https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user">Visual Studio Code</a>) que tenha suporte ao 'Jupyter Notebook'; </h6>
+---
 
-<h3>2° Passo: Meios de acessar o projeto</h3>
+## 🚀 Como iniciar
 
-<a href="https://github.com/NicolasChirazawa/automacao-cotas-investimento.git">Clone-o</a> ou <a href="https://github.com/NicolasChirazawa/automacao-cotas-investimento/archive/refs/heads/main.zip">baixe-o</a>; <br>
+### 1️⃣ Softwares necessários
 
-<h3>3° Passo: Instalação de dependências</h3>
+- [Python](https://www.python.org/downloads/)
 
-Há um arquivo na raiz do projeto <em>./requirements.txt</em> que dispõem as dependências a serem instaladas. Para utilizar usar o projeto, com a mesma estrutura que desenvolvi, basta usar o comando abaixo:
+Recomendação: utilizar um editor como o [Visual Studio Code](https://code.visualstudio.com/) com suporte a Jupyter Notebook.
+
+### 2️⃣ Acessando o projeto
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/NicolasChirazawa/automacao-cotas-investimento.git
+```
+
+Ou baixe o arquivo `.zip` diretamente pelo GitHub.
+
+### 3️⃣ Instalação de dependências
+
+O projeto possui um arquivo `requirements.txt` na raiz contendo as dependências necessárias.
+
+Execute:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-<h3>4° Passo: Configuração do JSON</h3>
-Há um arquivo no caminho <em>'/app/option_template.json'</em> para configurar as opções disponibilizadas no projeto. <br> <br>
+### 4️⃣ Configuração
 
-<h2 name="funcionalidades">Funcionalidades </h2>
-Há dois módulos principais de funcionalidades:
-
-<h3>Planilhas</h3>
-
-<details>
-  <summary> <h4>CVM</h4> </summary>
-  
-  A CVM (<a href='https://www.infomoney.com.br/guias/cvm-comissao-de-valores-mobiliarios/'>Comissão de Valores Mobiliários</a>) é um órgão fundamental para construção 
-  de segurança do investidor, realizando a fiscalização e mantendo a transparência do mercado de capital brasileiro.
-    <br> <br>
-    ㅤㅤ
-    • Download e dezip de planilhas da CVM através de datas a sua escolha [1]; <br>
-    • Criação e filtragem de data das planilhas por investimento; <br>
-    • Cálculo da valorização da cota de investimento; <br> 
-    ㅤㅤ
-    <h6>[1]: Desde de maio de 2022, os arquivos passavam a ser '.csv' zippados.</h6>
-</details> 
-
-<details>
-  <summary> <h4>Métricas - Ipeadata</h4> </summary>
-  
-  O Ipeadata (<a href="https://www.ipea.gov.br/portal/component/assuntos/interna?id=216">Instituto de Pesquisa Econômica Avançada</a>) é uma base dados pública que abrange séries     históricas anuais, mensais e diárias sobre diversos registros macroeconômicos, financeiros, regionais e sociais do Brasil. Dentro deste projeto, hoje, está sendo trabalhado com as seguintes métricas:
-  
-  <details>
-      <summary>CDI (Certificado de Depósito Interbancário)</summary>
-      O CDI é uma taxa de empréstimo (juros) entre bancos feita a curtíssimos prazos (basicamente equiparente a taxa Selic). <br>
-      É utilizada como um indexador de investimentos, CDBs, LCIs, LCAs e fundos.
-  </details>
-  
-  <details>
-    <summary>Inflação</summary>
-    A taxa que reflete a desvalorização do poder de compra, é medido pelo IPCA (Índice nacional de Preço ao Consumidor Amplo). <br>
-  </details>
-  ㅤㅤ
-  Oferecendo os seguintes resultados: 
-  <br>
-  •  Construção de planilhas do CDI diário; <br>
-  •  Valorização do CDI diariamente; <br>
-</details> 
-
-<h3>Gráficos</h3>
-
-<h2 name="estrutura">Estrutura do Projeto </h2>
+Existe um arquivo em:
 
 ```
-┌─ app
-│  ┌─ * data
-│  │  ├─ /*/Todos os dados baixados e processados ao longo do projeto */
-│  ├─ options_template.json
-│  └─ src
-│     ├─ graphics
-│     │  └─ produce_graphic_by_data.ipynb
-│     ├─ spreedsheets
-│     │  ├─ cvm
-│     │  │  ├─ download_cvm_data.ipynb
-│     │  │  └─ process_cvm_data.ipynb
-│     │  └─ metrics
-│     │     └─ cdi
-│     │        ├─ process_cdi_data.ipynb
-│     │        └─ valuation_cdi_data.ipynb
-│     └─ utils
-│        ├─ classes
-│        │  ├─ cvm_link.py
-│        │  ├─ ipea.py
-│        │  └─ pandas_dataframe.py
-│        └─ functions
-└─           └─ date_transform.py
+/app/options_template.json
 ```
+
+Utilize-o como base para configurar as opções do projeto.
+
+---
+
+## ⚙️ Funcionalidades
+
+O projeto está dividido em dois principais módulos:
+
+### 📁 Planilhas
+
+<details>
+  <summary><strong>CVM</strong></summary>
+
+A CVM ([Comissão de Valores Mobiliários](https://www.infomoney.com.br/guias/cvm-comissao-de-valores-mobiliarios/)) é responsável por fiscalizar e garantir a transparência do mercado de capitais brasileiro.
+
+Funcionalidades:
+
+- Download e descompactação de planilhas `.zip` da CVM por período selecionado  
+- Criação e filtragem de dados por investimento  
+- Cálculo da valorização da cota  
+
+<sub>Desde maio de 2022, os arquivos passaram a ser disponibilizados em formato `.csv` compactado.</sub>
+
+</details>
+
+<details>
+  <summary><strong>Métricas – Ipeadata</strong></summary>
+
+O Ipeadata ([Instituto de Pesquisa Econômica Aplicada](https://www.ipea.gov.br/portal/)) é uma base pública com séries históricas macroeconômicas do Brasil.
+
+Atualmente o projeto trabalha com:
+
+<details>
+  <summary><strong>CDI (Certificado de Depósito Interbancário)</strong></summary>
+
+Taxa de juros de empréstimos interbancários de curtíssimo prazo, amplamente utilizada como indexador de investimentos como CDBs, LCIs, LCAs e fundos.
+
+</details>
+
+<details>
+  <summary><strong>Inflação (IPCA)</strong></summary>
+
+Índice Nacional de Preços ao Consumidor Amplo, utilizado como principal indicador oficial de inflação no Brasil.
+
+</details>
+
+Resultados gerados:
+
+- Construção de planilhas do CDI diário  
+- Cálculo da valorização acumulada do CDI  
+
+</details>
+
+---
+
+### 📈 Gráficos
+
+- Geração de gráficos comparativos entre valorização de cotas e indicadores macroeconômicos  
+- Visualização histórica para apoio à análise de performance  
+
+---
+
+## 🗂 Estrutura do Projeto
+
+```
+app
+├── data
+│   └── (dados baixados e processados)
+├── options_template.json
+└── src
+    ├── graphics
+    │   └── produce_graphic_by_data.ipynb
+    ├── spreadsheets
+    │   ├── cvm
+    │   │   ├── download_cvm_data.ipynb
+    │   │   └── process_cvm_data.ipynb
+    │   └── metrics
+    │       └── cdi
+    │           ├── process_cdi_data.ipynb
+    │           └── valuation_cdi_data.ipynb
+    └── utils
+        ├── classes
+        │   ├── cvm_link.py
+        │   ├── ipea.py
+        │   └── pandas_dataframe.py
+        └── functions
+            └── date_transform.py
+```
+
+---
+
+## 🎯 Objetivo
+
+Construir uma base automatizada para análise de valorização de cotas de investimento, permitindo comparação estruturada com indicadores macroeconômicos.
