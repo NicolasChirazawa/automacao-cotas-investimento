@@ -1,19 +1,19 @@
 class IpeaLink:
     '''
-    Classe para criação de links UVM.
+    Class responsable for creating an IPEA link.
 
     Attributes:
 
         url (str):
-            Link pré-settado.
+           Link.
         api (str): 
-           Caminho da API.
+           API url.
         extension (str): 
-            Endereço da API.
+            API data extension.
     
     Methods:
-        adjust_data(num_month, year): Lê um arquivo CSV baseado no 'path' e preenche o atributo 'df'.
-        create_link(month, year): Cria o link e devolve o link 
+        adjust_data(num_month, year): Read a '.csv' archive using the 'path'.
+        create_link(month, year): Create and return a link.
     '''
     def __init__(self, api, extension):
         self.url = "https://www.ipeadata.gov.br/api/odata4/Metadados"
