@@ -1,20 +1,21 @@
 class IpeaLink:
-    '''
-    Class responsable for creating an IPEA link.
+    """
+    Class responsible for generating IPEA API request links.
 
     Attributes:
-
         url (str):
-           Link.
-        api (str): 
-           API url.
-        extension (str): 
-            API data extension.
-    
+            Base URL for the IPEA API.
+
+        api (str):
+            API endpoint path.
+
+        extension (str):
+            Data format or query extension.
+
     Methods:
-        adjust_data(num_month, year): Read a '.csv' archive using the 'path'.
-        create_link(month, year): Create and return a link.
-    '''
+        create_link():
+            Creates and returns the full API request link.
+    """
     def __init__(self, api, extension):
         self.url = "https://www.ipeadata.gov.br/api/odata4/Metadados"
         self.api = api
