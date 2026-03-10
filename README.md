@@ -118,7 +118,8 @@ Resultados gerados:
     <img src="https://raw.githubusercontent.com/NicolasChirazawa/automacao-cotas-investimento/refs/heads/main/imgs/Screenshot_1.png">
   </details>
   <details>
-    <summary> 🔜 Valorização de cota perante a indicadores econômicos; </summary>
+    <summary>Valorização de cota perante a indicadores econômicos; </summary>
+    <img src="https://raw.githubusercontent.com/NicolasChirazawa/automacao-cotas-investimento/refs/heads/main/imgs/Screenshot_2.png">
   </details>
   <details>
     <summary> 🔜 Simulação de valor de resgate;</summary>
