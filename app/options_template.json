@@ -34,5 +34,12 @@
             "CDI": true,
             "Inflacao": false
         }
+    },
+    "REDEEM": {
+        "INVESTMENT": "52.324.414/0001-70",
+        "VALUE_TYPE": {
+            "GROSS": false, /* Valor bruto do resgate */
+            "LIQUID": false /* Valor líquido do resgate */
+        }
     }
 }
