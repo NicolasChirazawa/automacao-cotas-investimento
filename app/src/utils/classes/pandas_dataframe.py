@@ -101,4 +101,15 @@ class PandasDataframe:
     def group_element(self, group_element):
         self.df = self.df.groupby(group_element)
 
+    def find_row_date_greater_or_equals_than_indicated(self, date_str) -> tuple[bool, int]:
+        column_date = pd.to_datetime(self.df['DT_COMPTC'])
+        mask = column_date >= date_str
+
+        if mask.any():
+            idx = mask.idxmax()
+            return [True, idx]
+        else:
+            # Caso inválido retorna aqui
+            return [False, 0]
+
 __all__ = [PandasDataframe]
