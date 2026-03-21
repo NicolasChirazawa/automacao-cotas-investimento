@@ -37,9 +37,6 @@
     },
     "REDEEM": {
         "INVESTMENT": "52.324.414/0001-70",
-        "VALUE_TYPE": {
-            "GROSS": false, /* Valor bruto do resgate */
-            "LIQUID": false /* Valor líquido do resgate */
-        }
+        "DAYS_OFFSET": 5 /* Perante as datas, pode ser realizado uma compra num feriado, por isso há um offset de disponibilidade em dias */
     }
 }
