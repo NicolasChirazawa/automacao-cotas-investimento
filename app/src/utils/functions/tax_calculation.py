@@ -21,7 +21,7 @@ def income_tax_calculation(sum_days: int) -> float:
     else:
         return 15.0
     
-def iof_tax_calculation(sum_days: int) -> int:
+def iof_tax_calculation(sum_days: int) -> float:
 
     '''
     Calculate the iof tax rate based on the duration in days.
