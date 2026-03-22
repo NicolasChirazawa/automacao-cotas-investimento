@@ -125,6 +125,7 @@ Resultados gerados:
 ---
 
 ### Simulação
+
   Baseado no processamento das planilhas, gerar estimativas do valor inicial e final perante a valorização de cotas de investimento, implementando lucro bruto e líquido (usando a taxação do IOF e IR).
 
 ---
@@ -163,4 +164,3 @@ Resultados gerados:
 └── requirements.txt
 
 ```
----
