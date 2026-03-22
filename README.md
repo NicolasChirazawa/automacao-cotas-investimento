@@ -128,6 +128,11 @@ Resultados gerados:
 
   Baseado no processamento das planilhas, gerar estimativas do valor inicial e final perante a valorização de cotas de investimento, implementando lucro bruto e líquido (usando a taxação do IOF e IR).
 
+  <details>
+    <summary>Demonstramento;</summary>
+    <img src="https://raw.githubusercontent.com/NicolasChirazawa/automacao-cotas-investimento/refs/heads/main/imgs/Screenshot_1.png">
+  </details>
+
 ---
 
 <h2 name="estrutura-do-projeto"> Estrutura do Projeto </h2>
@@ -158,9 +163,6 @@ Resultados gerados:
 │   │           ├── date_transform.py
 │   │           └── tax_calculation.py
 │   └── options_template.json
-├── .gitattributes
-├── .gitignore
-├── README.md
 └── requirements.txt
 
 ```
