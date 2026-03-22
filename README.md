@@ -14,9 +14,9 @@
 
 <h2 name="descricao"> Descrição </h2>
 
-Projeto de automação para coleta, processamento e análise de dados de fundos de investimento, comparando a valorização de cotas com indicadores macroeconômicos como CDI e inflação (IPCA).
+Projeto de automação para coleta, processamento e análise de dados de fundos de investimento.
 
-O objetivo é construir uma base estruturada para análise histórica e geração de gráficos comparativos.
+O objetivo é construir uma base estruturada para análise histórica, geração de gráficos comparativos e simulações de investimento.
 
 ---
 
@@ -62,7 +62,7 @@ Utilize-o como base para configurar as opções do projeto.
 
 <h2 name="funcionalidades"> Funcionalidades </h2>
 
-O projeto está dividido em dois principais módulos:
+O projeto está dividido em três principais módulos:
 
 ### Planilhas
 
@@ -114,43 +114,53 @@ Resultados gerados:
 ### Gráficos
 
   <details>
-    <summary>Geração de gráfico comparativo entre o preço de cotas dado um período de tempo;</summary>
+    <summary>Geração de gráfico comparativo entre o preço de cotas num período de tempo;</summary>
     <img src="https://raw.githubusercontent.com/NicolasChirazawa/automacao-cotas-investimento/refs/heads/main/imgs/Screenshot_1.png">
   </details>
   <details>
-    <summary>Valorização de cota perante a indicadores econômicos; </summary>
+    <summary>Valorização de cotas diante indicadores econômicos;</summary>
     <img src="https://raw.githubusercontent.com/NicolasChirazawa/automacao-cotas-investimento/refs/heads/main/imgs/Screenshot_2.png">
   </details>
-  <details>
-    <summary> 🔜 Simulação de valor de resgate;</summary>
-  </details>
+
+---
+
+### Simulação
+  Baseado no processamento das planilhas, gerar estimativas do valor inicial e final perante a valorização de cotas de investimento, implementando lucro bruto e líquido (usando a taxação do IOF e IR).
 
 ---
 
 <h2 name="estrutura-do-projeto"> Estrutura do Projeto </h2>
 
 ```
-app
-├── data
-│   └── (dados baixados e processados)
-├── options_template.json
-└── src
-    ├── graphics
-    │   └── produce_graphic_by_data.ipynb
-    ├── spreadsheets
-    │   ├── cvm
-    │   │   ├── download_cvm_data.ipynb
-    │   │   └── process_cvm_data.ipynb
-    │   └── metrics
-    │       └── cdi
-    │           ├── process_cdi_data.ipynb
-    │           └── valuation_cdi_data.ipynb
-    └── utils
-        ├── classes
-        │   ├── cvm_link.py
-        │   ├── ipea.py
-        │   └── pandas_dataframe.py
-        └── functions
-            └── date_transform.py
+├── app/
+│   ├── src/
+│   │   ├── graphics/
+│   │   │   ├── quota_metric_valuation.ipynb
+│   │   │   └── quota_price_evolution.ipynb
+│   │   ├── redeem/
+│   │   │   ├── errors_redeem.py
+│   │   │   └── redeem_simulation.ipynb
+│   │   ├── spreedsheets/
+│   │   │   ├── cvm/
+│   │   │   │   ├── download_cvm_data.ipynb
+│   │   │   │   └── process_cvm_data.ipynb
+│   │   │   └── metrics/
+│   │   │       └── cdi/
+│   │   │           ├── process_cdi_data.ipynb
+│   │   │           └── valuation_cdi_data.ipynb
+│   │   └── utils/
+│   │       ├── classes/
+│   │       │   ├── cvm_link.py
+│   │       │   ├── ipea_link.py
+│   │       │   └── pandas_dataframe.py
+│   │       └── functions/
+│   │           ├── date_transform.py
+│   │           └── tax_calculation.py
+│   └── options_template.json
+├── .gitattributes
+├── .gitignore
+├── README.md
+└── requirements.txt
+
 ```
 ---
