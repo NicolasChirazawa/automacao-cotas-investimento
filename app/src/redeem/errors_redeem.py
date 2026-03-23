@@ -19,7 +19,7 @@ class Errors_Redeem_Simulation:
             "\nInvestment Date Start + Offset: " + str_new_investment_start +
             "\nFirst Row Date: " + str_first_row +
             "\n'Investment Date Start + Offset' inits before the 'First Row Date'." +
-            "\n Hit: Processing data (START_DATE) is later than 'HistoricoCompraData'"
+            "\n Hit: Processing data (START_DATE) is later than 'PURCHASE_DATE'"
         )
     
     def dto_invalid_date_init_after_row_end(self, str_investment_start: str, last_row_date: int):
@@ -33,7 +33,7 @@ class Errors_Redeem_Simulation:
             "\nInvestment Date Start: " + str_investment_start + 
             "\nLast row date: " + str_last_row_date +
             "\n'Investment Date' inits after the 'Last Row Date'." +
-            "\n Hit: Processing data (END_DATE) is earlier than 'HistoricoCompraData'"
+            "\n Hit: Processing data (END_DATE) is earlier than 'PURCHASE_DATE'"
         )
     
     def dto_invalid_date_init_quota_adjust(self, str_investment_start: str, last_row_date: datetime, COTA_APLICACAO):
@@ -48,7 +48,7 @@ class Errors_Redeem_Simulation:
             "\nInvestment Date Start + Quota Index Aplicacao: " + str_investment_start + " D+" + index_cota_aplicacao +
             "\nLast row date: " + str_last_row +
             "\nInvestment Date Start + Quota Index Aplicacao' inits after the 'Last Row Date'."
-            "\nHit: Processing data (END_DATE) is earlier than 'HistoricoCompraData' + 'CotaApplicacao'"
+            "\nHit: Processing data (END_DATE) is earlier than 'PURCHASE_DATE' + 'INVESTMENT_QUOTA'"
         )
 
     # Date End: 
@@ -64,7 +64,7 @@ class Errors_Redeem_Simulation:
             "\nInvestment Date End: " + str_investment_end + 
             "\nFirst Row Date: " + str_first_row_date +
             "\n'Investment Date End' inits before the 'First Row Date'." +
-            "\n Hit: Processing data (START_DATE) is later than 'HistoricoVendaData'"
+            "\n Hit: Processing data (START_DATE) is later than 'SOLD_DATE'"
         )
 
     def dto_invalid_date_end_after_row_end(self, last_row_date: datetime, date_investment_end: datetime):
@@ -78,7 +78,7 @@ class Errors_Redeem_Simulation:
             "\nInvestment Date End: " + str_last_row + 
             "\nLast Row Date: " + str_investment_end +
             "\n'Investment Date End' ends after the 'Last Row Date'."
-            "\n Hit: Processing data (END_DATE) is earlier than 'HistoricoVendaData'"
+            "\n Hit: Processing data (END_DATE) is earlier than 'SOLD_DATE'"
         )
 
     def dto_invalid_date_end_quota_adjust(self, str_investment_end: str, last_row_date: datetime, COTA_RESGATE: int):
@@ -93,7 +93,7 @@ class Errors_Redeem_Simulation:
             "\nInvestment Date Start + Quota Index Resgate: " + str_investment_end + " D+" + index_cota_resgate +
             "\nLast Row Date: " + str_last_row +
             "\n'Investment Date End' ends after the 'Last Row Date'.",
-            "\nHit: Processing data (END_DATE) is earlier than 'HistoricoVendaData' + 'CotaResgate'"
+            "\nHit: Processing data (END_DATE) is earlier than 'SOLD_DATE' + 'REDEEM_QUOTA'"
         )
 
     # Date Init X Date End:
@@ -109,7 +109,7 @@ class Errors_Redeem_Simulation:
             "\nInvestment Date Start + Quota Index Aplicacao: " + str_investment_start_quota + 
             "\nInvestment Date End: " + str_investment_end +
             "\n'Investment Date End' starts before the 'Investment Date Start + Quota Index Aplicacao'.",
-            "\nHit: Adjust 'HistoricoCompraData + CotaApplicacao' to 'HistoricoVendaData'"
+            "\nHit: Adjust 'PURCHASE_DATE + INVESTMENT_QUOTA' to 'SOLD_DATE'"
         )
 
 _all_ = [ Errors_Redeem_Simulation ]

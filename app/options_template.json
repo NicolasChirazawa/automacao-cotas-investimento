@@ -13,22 +13,23 @@
     },
     "INVESTMENTS": { /* Faça uma lista com os investimentos que selecionou */
         "01.234.5678/0000-90": {
-            "Fundo": "Investimento ideal", 
-            "HistoricoCompraData": "2025-02-03",
-            "HistoricoVendaData": "2025-02-12",
-            "Cotas": 200, /* Cotas na compra, valor absoluto */
-            "CotaApplicacao": 0, /* D0, D1, D2 etc.., calculo do valor inicial */
-            "CotaResgate": 0 /* D0, D1, D2 etc.., calculo do valor final */
+            "INVESTMENT_FUND": "Investimento ideal", 
+            "PURCHASE_DATE": "2025-02-03",
+            "SOLD_DATE": "2025-02-12",
+            "QUOTAS": 200, /* Cotas na compra, valor absoluto */
+            "INVESTMENT_QUOTA": 0, /* D0, D1, D2 etc.., calculo do valor inicial */
+            "REDEEM_QUOTA": 0 /* D0, D1, D2 etc.., calculo do valor final */
         },
         "36.966.636/0001-30": {
-            "Fundo": "Investimento teorico",
-            "HistoricoCompraData": "2025-02-03",
-            "HistoricoVendaData": "2025-02-12",
-            "CotaApplicacao": 0,
-            "CotaResgate": 0
+            "INVESTMENT_FUND": "Investimento teorico",
+            "PURCHASE_DATE": "2025-02-03",
+            "SOLD_DATE": "2025-02-12",
+            "QUOTAS": 300,
+            "INVESTMENT_QUOTA": 0,
+            "REDEEM_QUOTA": 0
         },
     },
-    "GRAPHIC": {
+    "CHARTS": {
         "INVESTMENT_LIST": ["52.324.414/0001-70", "36.966.636/0001-30"],
         "METRICS": { /* Lista com as métricas usadas nos gráficos de valorização */
             "CDI": true,
