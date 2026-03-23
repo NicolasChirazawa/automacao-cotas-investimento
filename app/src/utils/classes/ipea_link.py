@@ -24,4 +24,4 @@ class IpeaLink:
     def create_link(self):
         return self.url + self.api + self.extension
     
-__all__ = [IpeaLink]
+__all__ = [ "IpeaLink" ]

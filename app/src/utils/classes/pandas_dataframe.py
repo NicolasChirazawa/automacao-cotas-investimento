@@ -112,4 +112,4 @@ class PandasDataframe:
             # Caso inválido retorna aqui
             return [False, 0]
 
-__all__ = [PandasDataframe]
+__all__ = [ "PandasDataframe" ]

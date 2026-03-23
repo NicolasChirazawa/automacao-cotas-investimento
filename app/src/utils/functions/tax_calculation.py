@@ -45,4 +45,7 @@ def iof_tax_calculation(sum_days: int) -> float:
     else:
         return tax_rate
 
-__all__ = [income_tax_calculation, iof_tax_calculation]
+__all__ = [ 
+    "income_tax_calculation", 
+    "iof_tax_calculation" 
+]

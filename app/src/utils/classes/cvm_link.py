@@ -34,4 +34,4 @@ class CvmLink:
         cvm_link = self.url + year + month + self.zip
         return cvm_link
     
-__all__ = [CvmLink]
+__all__ = [ "CvmLink" ]

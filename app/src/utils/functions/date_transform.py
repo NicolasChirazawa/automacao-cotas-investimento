@@ -195,4 +195,14 @@ def is_a_leap_year (year: int) -> bool:
     
     return False
 
-__all__ = [transform_string_on_number_list, transform_string_into_date, transform_date_into_string, get_date_loop, calculate_days, final_day_of_month, is_a_leap_year, add_days_on_date, subtract_days_on_date]
+__all__ = [ 
+    "transform_string_on_number_list", 
+    "transform_string_into_date", 
+    "transform_date_into_string", 
+    "get_date_loop", 
+    "calculate_days", 
+    "final_day_of_month", 
+    "is_a_leap_year", 
+    "add_days_on_date", 
+    "subtract_days_on_date" 
+]
