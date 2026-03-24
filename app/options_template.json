@@ -9,7 +9,9 @@
             "ZIP_NAME": "zip",
             "DATA_NAME": "processed"
         },
-        "CDI": "cdi"
+        "METRICS": {
+           "CDI": "cdi"
+        }
     },
     "INVESTMENTS": { /* Faça uma lista com os investimentos que selecionou */
         "01.234.5678/0000-90": {
