@@ -25,7 +25,8 @@ release = '1.0.0'
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.viewcode',
-    'sphinx.ext.napoleon'
+    'sphinx.ext.napoleon',
+    'sphinx_design'
 ]
 
 add_module_names = False
@@ -41,3 +42,6 @@ html_theme = 'sphinxawesome_theme'
 html_static_path = ['_static']
 html_css_files = ['css/custom.css']
 html_js_files = ['js/custom.js']
+html_theme_options = {
+    "show_nav_level": 2,
+}

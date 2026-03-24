@@ -69,6 +69,12 @@
 </a>
 <div class="relative overflow-hidden md:overflow-auto my-4 md:my-0">
 <div class="overflow-y-auto h-full w-full relative pr-6"><nav class="table w-full min-w-full my-6 lg:my-8">
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="../project_structure/">Project Structure<button @click.prevent.stop="expanded = !expanded" type="button" x-cloak=""><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul class="simple" x-cloak="" x-show="expanded">
+</ul>
+</li>
+</ul>
 </nav>
 </div>
 </div>
@@ -254,7 +260,29 @@
 </dd>
 </dl>
 </dd></dl>
-
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../">Welcome to documentation!</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../#how-to-start">How to start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../#next-steps">Next steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../#questions-comments">Questions / Comments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../project_structure/">Project Structure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../project_structure/#utils.functions.date_transform.add_days_on_date"><code class="docutils literal notranslate"><span class="pre">add_days_on_date()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../project_structure/#utils.functions.date_transform.final_day_of_month"><code class="docutils literal notranslate"><span class="pre">final_day_of_month()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../project_structure/#utils.functions.date_transform.get_date_loop"><code class="docutils literal notranslate"><span class="pre">get_date_loop()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../project_structure/#utils.functions.date_transform.is_a_leap_year"><code class="docutils literal notranslate"><span class="pre">is_a_leap_year()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../project_structure/#utils.functions.date_transform.subtract_days_on_date"><code class="docutils literal notranslate"><span class="pre">subtract_days_on_date()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../project_structure/#utils.functions.date_transform.transform_date_into_string"><code class="docutils literal notranslate"><span class="pre">transform_date_into_string()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../project_structure/#utils.functions.date_transform.transform_string_into_date"><code class="docutils literal notranslate"><span class="pre">transform_string_into_date()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../project_structure/#utils.functions.date_transform.transform_string_on_number_list"><code class="docutils literal notranslate"><span class="pre">transform_string_on_number_list()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div>
 </section>
 </div></div><aside class="hidden text-sm xl:block" id="right-sidebar">
 <div class="sticky top-16 -mt-10 max-h-[calc(100vh-5rem)] h-full overflow-y-auto pt-6 space-y-2"><p class="font-medium">On this page</p>

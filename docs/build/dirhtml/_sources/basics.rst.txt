@@ -1,0 +1,10 @@
+Basics
+======
+
+This section covers the fundamental concepts of the project.
+
+.. toctree::
+   :maxdepth: 1
+
+   JSON_configuration
+   project_structure

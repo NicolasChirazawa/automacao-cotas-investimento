@@ -103,7 +103,12 @@
 
     <div class="relative overflow-hidden md:overflow-auto my-4 md:my-0">
       <div class="overflow-y-auto h-full w-full relative pr-6"><nav class="table w-full min-w-full my-6 lg:my-8">
-  
+  <p class="caption" role="heading"><span class="caption-text">The Basics:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../JSON_configuration/">JSON Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../project_structure/">Project Structure</a></li>
+</ul>
+
 </nav>
       </div>
     </div>
@@ -147,7 +152,7 @@
 <span></span><code><span id="line-1"><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
 </span><span id="line-2">
 <div class="viewcode-block" id="transform_string_on_number_list">
-<a class="viewcode-back" href="../../../../project_struct/#utils.functions.date_transform.transform_string_on_number_list">[docs]</a>
+<a class="viewcode-back" href="../../../../JSON_configuration/#utils.functions.date_transform.transform_string_on_number_list">[docs]</a>
 </span><span id="line-3"><span class="k">def</span><span class="w"> </span><span class="nf">transform_string_on_number_list</span><span class="p">(</span><span class="n">date_str</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">]:</span>
 </span><span id="line-4"><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="line-5"><span class="sd">    Splits a date string in the format &#39;YYYY-MM-DD&#39; into &#39;year&#39;, &#39;month&#39;, &#39;day&#39;.</span>
@@ -170,7 +175,7 @@
 
 </span><span id="line-22">
 <div class="viewcode-block" id="transform_string_into_date">
-<a class="viewcode-back" href="../../../../project_struct/#utils.functions.date_transform.transform_string_into_date">[docs]</a>
+<a class="viewcode-back" href="../../../../JSON_configuration/#utils.functions.date_transform.transform_string_into_date">[docs]</a>
 </span><span id="line-23"><span class="k">def</span><span class="w"> </span><span class="nf">transform_string_into_date</span><span class="p">(</span><span class="n">date_str</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">datetime</span><span class="p">:</span>
 </span><span id="line-24"><span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 </span><span id="line-25"><span class="sd">    Convert a string into a date</span>
@@ -186,7 +191,7 @@
 
 </span><span id="line-35">
 <div class="viewcode-block" id="transform_date_into_string">
-<a class="viewcode-back" href="../../../../project_struct/#utils.functions.date_transform.transform_date_into_string">[docs]</a>
+<a class="viewcode-back" href="../../../../JSON_configuration/#utils.functions.date_transform.transform_date_into_string">[docs]</a>
 </span><span id="line-36"><span class="k">def</span><span class="w"> </span><span class="nf">transform_date_into_string</span><span class="p">(</span><span class="n">date</span><span class="p">:</span> <span class="n">datetime</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 </span><span id="line-37"><span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 </span><span id="line-38"><span class="sd">    Convert a date into a string</span>
@@ -202,7 +207,7 @@
 
 </span><span id="line-48">
 <div class="viewcode-block" id="add_days_on_date">
-<a class="viewcode-back" href="../../../../project_struct/#utils.functions.date_transform.add_days_on_date">[docs]</a>
+<a class="viewcode-back" href="../../../../JSON_configuration/#utils.functions.date_transform.add_days_on_date">[docs]</a>
 </span><span id="line-49"><span class="k">def</span><span class="w"> </span><span class="nf">add_days_on_date</span> <span class="p">(</span><span class="n">date</span><span class="p">:</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">days</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">datetime</span><span class="p">:</span>
 </span><span id="line-50"><span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 </span><span id="line-51"><span class="sd">    Add days on a date</span>
@@ -218,7 +223,7 @@
 
 </span><span id="line-61">
 <div class="viewcode-block" id="subtract_days_on_date">
-<a class="viewcode-back" href="../../../../project_struct/#utils.functions.date_transform.subtract_days_on_date">[docs]</a>
+<a class="viewcode-back" href="../../../../JSON_configuration/#utils.functions.date_transform.subtract_days_on_date">[docs]</a>
 </span><span id="line-62"><span class="k">def</span><span class="w"> </span><span class="nf">subtract_days_on_date</span> <span class="p">(</span><span class="n">date</span><span class="p">:</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">days</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">datetime</span><span class="p">:</span>
 </span><span id="line-63"><span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 </span><span id="line-64"><span class="sd">    Subtract days on a date</span>
@@ -234,7 +239,7 @@
 
 </span><span id="line-74">
 <div class="viewcode-block" id="get_date_loop">
-<a class="viewcode-back" href="../../../../project_struct/#utils.functions.date_transform.get_date_loop">[docs]</a>
+<a class="viewcode-back" href="../../../../JSON_configuration/#utils.functions.date_transform.get_date_loop">[docs]</a>
 </span><span id="line-75"><span class="k">def</span><span class="w"> </span><span class="nf">get_date_loop</span><span class="p">(</span><span class="n">start_year</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">end_year</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">start_month</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">end_month</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">year</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">]:</span>
 </span><span id="line-76"><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 </span><span id="line-77"><span class="sd">    Return the interval of months in an loop.</span>
@@ -302,7 +307,7 @@
 </span><span id="line-138">    <span class="k">return</span> <span class="n">sum_days</span>
 </span><span id="line-139">
 <div class="viewcode-block" id="final_day_of_month">
-<a class="viewcode-back" href="../../../../project_struct/#utils.functions.date_transform.final_day_of_month">[docs]</a>
+<a class="viewcode-back" href="../../../../JSON_configuration/#utils.functions.date_transform.final_day_of_month">[docs]</a>
 </span><span id="line-140"><span class="k">def</span><span class="w"> </span><span class="nf">final_day_of_month</span> <span class="p">(</span><span class="n">month</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">year</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 </span><span id="line-141"><span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 </span><span id="line-142"><span class="sd">    Determine how many days a given month has.</span>
@@ -344,7 +349,7 @@
 
 </span><span id="line-178">
 <div class="viewcode-block" id="is_a_leap_year">
-<a class="viewcode-back" href="../../../../project_struct/#utils.functions.date_transform.is_a_leap_year">[docs]</a>
+<a class="viewcode-back" href="../../../../JSON_configuration/#utils.functions.date_transform.is_a_leap_year">[docs]</a>
 </span><span id="line-179"><span class="k">def</span><span class="w"> </span><span class="nf">is_a_leap_year</span> <span class="p">(</span><span class="n">year</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 </span><span id="line-180"><span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 </span><span id="line-181"><span class="sd">    Determine whether a given year is a leap year.</span>

@@ -22,17 +22,17 @@
   <meta charset="utf-8" />
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#030711" />
-  
-  <title>Index | automacao-cotas-investimento 1.0.0 documentation</title>
-  <meta property="og:title" content="Index | automacao-cotas-investimento 1.0.0 documentation" />
-  <meta name="twitter:title" content="Index | automacao-cotas-investimento 1.0.0 documentation" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Project Structure | automacao-cotas-investimento 1.0.0 documentation</title>
+  <meta property="og:title" content="Project Structure | automacao-cotas-investimento 1.0.0 documentation" />
+  <meta name="twitter:title" content="Project Structure | automacao-cotas-investimento 1.0.0 documentation" />
   <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=e72c8e07" />
   <link rel="stylesheet" type="text/css" href="../_static/theme.css?v=73505e79" />
-  <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=02188226" />
-  <link rel="stylesheet" type="text/css" href="../_static/awesome-sphinx-design.css?v=c54898a4" />
   <link rel="search" title="Search" href="../search/" />
-  <link rel="index" title="Index" href="#" />
+  <link rel="index" title="Index" href="../genindex/" />
+  <link rel="prev" title="JSON Configuration" href="../JSON_configuration/" />
 </head>
 
 <body x-data="{ showSidebar: false, showScrollTop: false }"
@@ -105,15 +105,10 @@
 
     <div class="relative overflow-hidden md:overflow-auto my-4 md:my-0">
       <div class="overflow-y-auto h-full w-full relative pr-6"><nav class="table w-full min-w-full my-6 lg:my-8">
-  <p class="caption" role="heading"><span class="caption-text">How to start:</span></p>
-<ul>
+  <p class="caption" role="heading"><span class="caption-text">The Basics:</span></p>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../JSON_configuration/">JSON Configuration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../project_flow/">Project Structure</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../spreedsheets/">Project Structure</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../redeem/">Project Structure</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../charts/">Project Structure</a></li>
-</ul>
-</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Project Structure</a></li>
 </ul>
 
 </nav>
@@ -148,19 +143,34 @@
   </a>
   
 <div class="mr-1">/</div><span aria-current="page"
-        class="font-medium text-foreground overflow-hidden text-ellipsis whitespace-nowrap">Index</span>
+        class="font-medium text-foreground overflow-hidden text-ellipsis whitespace-nowrap">Project Structure</span>
 </nav>
 
-<div id="content" role="main">
+    <div id="content" role="main">
+      <section id="project-structure">
+<h1>Project Structure<a class="headerlink" href="#project-structure" title="Link to this heading">¶</a></h1>
+<dl class="simple">
+<dt><a class="reference external" href="https://github.com/NicolasChirazawa/automacao-cotas-investimento/tree/main/app">app/</a></dt><dd><p>Main project directory.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">options_template.json</span></code>: Template configuration file for project execution.</p></li>
+</ul>
+</dd>
+<dt><cite>app/data/</cite></dt><dd><p>Stores all generated, processed, and consumed data.</p>
+</dd>
+<dt><a class="reference external" href="https://github.com/NicolasChirazawa/automacao-cotas-investimento/tree/main/app/src">app/src/</a></dt><dd><p>Contains all project modules.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">charts</span></code>: Generates charts for quota price evolution and percentage variation compared to economic indicators.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">redeem</span></code>: Investment simulations based on processed data.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">spreadsheets</span></code>: Generates spreadsheets based on the <code class="docutils literal notranslate"><span class="pre">options_template.json</span></code> file.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">utils</span></code>: Classes and functions to standardize project development.</p></li>
+</ul>
+</dd>
+<dt><a class="reference external" href="https://github.com/NicolasChirazawa/automacao-cotas-investimento/tree/main/docs/">docs/</a></dt><dd><p>Sphinx documentation files. All <code class="docutils literal notranslate"><span class="pre">*.rst</span></code> files compose sections of the documentation.</p>
+</dd>
+</dl>
+</section>
 
-  <h1 id="index">Index</h1>
-
-</div></div>
-<aside id="right-sidebar" class="hidden text-sm xl:block">
-<div class="sticky top-16 -mt-10 max-h-[calc(var(--vh)-4rem)] overflow-y-auto pt-6 space-y-2">
-
-</div>
-</aside>
+    </div></div>
           </main>
         </div>
       </div><footer class="py-6 border-t border-border md:py-0">
@@ -178,7 +188,6 @@
     <script src="../_static/doctools.js?v=fd6eb6e6"></script>
     <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script defer="defer" src="../_static/theme.js?v=582b20c5"></script>
-    <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script src="../_static/js/custom.js"></script>
     
 </body>
