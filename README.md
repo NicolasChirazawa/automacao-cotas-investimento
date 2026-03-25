@@ -7,15 +7,20 @@
 </p>
 
 <p align="center">
+  <a href="#motivacao">Motivação</a> •
   <a href="#inicio-rapido">Início Rápido</a> •
   <a href="#documentacao">Documentação</a> •
   <a href="#funcionalidades">Funcionalidades</a> •
   <a href="#estrutura-do-projeto">Estrutura</a> •
 </p>
 
-Projeto de automação para coleta, processamento e análise de dados de fundos de investimento.
+Projeto de automação para coleta, processamento e análise de dados de fundos de investimento brasileiros. Com foco em construir uma análise histórica para geração de gráficos comparativos entre fundos e indicadores, como para simulações de investimentos.
 
-O objetivo é construir uma base estruturada para análise histórica, geração de gráficos comparativos e simulações de investimento.
+---
+
+<h2 name="motivacao">Motivação</h2>
+
+Este projeto nasceu para facilitar minha análise de investimentos realizados através de Nubank. Este não proporciona transparância da evolução do seu investimento, apenas o valor inicial e final, comprometendo futuras análises.
 
 ---
 
@@ -55,13 +60,13 @@ Existe um arquivo em
 /app/options_template.json`
 ```
 
-Utilize-o como base para configurar as opções do projeto.
+Copie e cole o mesmo, em seguida, apague o `_template` do nome e configure de acordo com as instruções do arquivo, caso tenha qualquer dúvida, é disponibilizado uma documentação mais detalhada do projeto com um tópico só de configuração do JSON.
 
 ---
 
 <h2 name="documentacao">Documentação</h2>
 
-A documentação foi desenvolvida usando o 'Sphinx', a fim de proporcionar um formaro padrão, e compreensível.
+A documentação foi desenvolvida usando o 'Sphinx', a fim de proporcionar um formato padrão, e compreensível.
 Ela está disponibilizada dentro da pasta `/docs/source/index.rst`.
 
 ---
@@ -144,6 +149,14 @@ Resultados gerados:
 <h2 name="estrutura-do-projeto"> Estrutura do Projeto </h2>
 
 ```
+Principais diretórios:
+- `app/data` → contém todos os dados processados
+- `app/src/spreadsheets/` → coleta e processamento de dados
+- `app/src/graphics/` → geração de gráficos
+- `app/src/redeem/` → simulação de resgate
+- `app/src/utils/` → herpers e funções auxiliares
+- `docs` → documentação do projeto
+
 ├── app/
 │   ├── src/
 │   │   ├── graphics/
@@ -152,7 +165,7 @@ Resultados gerados:
 │   │   ├── redeem/
 │   │   │   ├── errors_redeem.py
 │   │   │   └── redeem_simulation.ipynb
-│   │   ├── spreedsheets/
+│   │   ├── spreadsheets/
 │   │   │   ├── cvm/
 │   │   │   │   ├── download_cvm_data.ipynb
 │   │   │   │   └── process_cvm_data.ipynb
@@ -170,5 +183,8 @@ Resultados gerados:
 │   │           └── tax_calculation.py
 │   └── options_template.json
 └── requirements.txt
-
 ```
+
+<h2>Dúvidas</h2>
+
+Caso haja qualquer dúvida, pode abrir uma issue no proejto por [aqui](https://github.com/NicolasChirazawa/automacao-cotas-investimento/issues/new).
