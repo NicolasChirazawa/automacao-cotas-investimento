@@ -3,16 +3,15 @@
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=%20&labelColor=9cccf4&message=Python&color=grey&style=for-the-badge&logo=python&logoColor=black"/>
   <img src="https://img.shields.io/static/v1?label=%20&labelColor=fcbe96&message=Jupyter&color=grey&style=for-the-badge&logo=jupyter&logoColor=black"/>
+    <img src="https://img.shields.io/static/v1?label=%20&labelColor=ffffff&message=Sphinx&color=grey&style=for-the-badge&logo=sphinx&logoColor=black"/>
 </p>
 
 <p align="center">
-  <a href="#descricao">Descrição</a> •
-  <a href="#como-iniciar">Como iniciar</a> •
+  <a href="#inicio-rapido">Início Rápido</a> •
+  <a href="#documentacao">Documentação</a> •
   <a href="#funcionalidades">Funcionalidades</a> •
-  <a href="#estrutura-do-projeto">Estrutura</a>
+  <a href="#estrutura-do-projeto">Estrutura</a> •
 </p>
-
-<h2 name="descricao"> Descrição </h2>
 
 Projeto de automação para coleta, processamento e análise de dados de fundos de investimento.
 
@@ -20,15 +19,15 @@ O objetivo é construir uma base estruturada para análise histórica, geração
 
 ---
 
-<h2 name="como-iniciar">Como iniciar</h2>
+<h2 name="inicio-rapido">Início Rápido</h2>
 
-### 1️⃣ Softwares necessários
+### 1️⃣ Pré-requisitos
 
 - [Python](https://www.python.org/downloads/)
 
 Recomendação: utilizar um editor como o [Visual Studio Code](https://code.visualstudio.com/) com suporte a Jupyter Notebook.
 
-### 2️⃣ Acessando o projeto
+### 2️⃣ Clonar o Projeto
 
 Clone o repositório:
 
@@ -57,6 +56,13 @@ Existe um arquivo em:
 ```
 
 Utilize-o como base para configurar as opções do projeto.
+
+---
+
+<h2 name="documentacao">Documentação/h2>
+
+A documentação foi desenvolvida usando o 'Sphinx', a fim de proporcionar um formaro padrão, e compreensível.
+Ela está disponibilizada dentro da pasta `/docs/source/index.rst`.
 
 ---
 
