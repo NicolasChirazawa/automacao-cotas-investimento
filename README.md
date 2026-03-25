@@ -49,12 +49,7 @@ pip install -r requirements.txt
 
 ### 4️⃣ Configuração
 
-Existe um arquivo em:
-
-```
-/app/options_template.json
-```
-
+Existe um arquivo em `/app/options_template.json`.
 Utilize-o como base para configurar as opções do projeto.
 
 ---
