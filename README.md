@@ -187,4 +187,4 @@ Principais diretórios:
 
 <h2>Dúvidas</h2>
 
-Caso haja qualquer dúvida, pode abrir uma issue no proejto por [aqui](https://github.com/NicolasChirazawa/automacao-cotas-investimento/issues/new).
+Caso haja qualquer dúvida, pode abrir uma issue no projeto por [aqui](https://github.com/NicolasChirazawa/automacao-cotas-investimento/issues/new).
