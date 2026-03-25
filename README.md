@@ -59,7 +59,7 @@ Utilize-o como base para configurar as opções do projeto.
 
 ---
 
-<h2 name="documentacao">Documentação/h2>
+<h2 name="documentacao">Documentação</h2>
 
 A documentação foi desenvolvida usando o 'Sphinx', a fim de proporcionar um formaro padrão, e compreensível.
 Ela está disponibilizada dentro da pasta `/docs/source/index.rst`.
