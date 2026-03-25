@@ -60,7 +60,7 @@ Existe um arquivo em
 /app/options_template.json`
 ```
 
-Copie e cole o mesmo, em seguida, apague o `_template` do nome e configure de acordo com as instruções do arquivo, caso tenha qualquer dúvida, é disponibilizado uma documentação mais detalhada do projeto com um tópico só de configuração do JSON.
+Copie e cole o mesmo, em seguida, apague o `_template` do nome e configure de acordo com as instruções do arquivo, caso tenha qualquer dúvida, é disponibilizado uma documentação mais detalhada do projeto com um tópico só de 'configuração do JSON'.
 
 ---
 
