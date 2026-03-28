@@ -72,34 +72,41 @@ def subtract_days_on_date (date: datetime, days: int) -> datetime:
     '''
     return date - timedelta(days=days)
 
-def get_date_loop(start_year: int, end_year: int, start_month: int, end_month: int, year: int) -> tuple[int, int]:
+def get_date_loop(start_date_object: dict, end_date_object: dict, year_reference: int) -> tuple[int, int]:
     """
     Return the interval of months in an loop.
 
     Parameters:
-        start_year (int): 
-        end_year (int):
-        start_month (int):
-        end_month (int):
-        year (int):
+        start_date_object (dict):
+            Dictionary containing:
+                - 'year' (int): Year of the start date
+                - 'month' (int): Month of the start date
+
+        end_date_object (dict):
+            Dictionary containing:
+                - 'year' (int): Year of the end date
+                - 'month' (int): Month of the end date
+
+        year_reference (int):
     
     Returns:
         tuple ([int, int]): (start_month_loop, end_month_loop)
     """
+
     FIRST_MONTH_YEAR, LAST_MONTH_YEAR = 1, 12
     start_month_loop, end_month_loop = '', ''
 
-    if start_year == year:
-        start_month_loop = start_month
+    if start_date_object['year'] == year_reference:
+        start_month_loop = start_date_object['month']
     else:
         start_month_loop = FIRST_MONTH_YEAR
 
-    if end_year == year:
-        end_month_loop = end_month
+    if end_date_object['year'] == year_reference:
+        end_month_loop = end_date_object['month']
     else:
         end_month_loop = LAST_MONTH_YEAR
     
-    return [start_month_loop, end_month_loop]
+    return (start_month_loop, end_month_loop)
 
 def calculate_days(start_str_date, end_str_date):
     
