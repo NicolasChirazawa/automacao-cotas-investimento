@@ -11,7 +11,7 @@
   <a href="#inicio-rapido">Início Rápido</a> •
   <a href="#documentacao">Documentação</a> •
   <a href="#funcionalidades">Funcionalidades</a> •
-  <a href="#estrutura-do-projeto">Estrutura</a> •
+  <a href="#estrutura-do-projeto">Estrutura</a> 
 </p>
 
 Projeto de automação para coleta, processamento e análise de dados de fundos de investimento brasileiros. Com foco em construir uma análise histórica para geração de gráficos comparativos entre fundos e indicadores, como para simulações de investimentos.
@@ -126,11 +126,11 @@ Resultados gerados:
 
   <details>
     <summary>Geração de gráfico comparativo entre o preço de cotas num período de tempo;</summary>
-    <img src="https://raw.githubusercontent.com/NicolasChirazawa/automacao-cotas-investimento/refs/heads/main/imgs/Screenshot_1.png">
+    <img src="https://github.com/NicolasChirazawa/automacao-cotas-investimento/blob/main/docs/source/_static/images/Screenshot_1.png">
   </details>
   <details>
     <summary>Valorização de cotas diante indicadores econômicos;</summary>
-    <img src="https://raw.githubusercontent.com/NicolasChirazawa/automacao-cotas-investimento/refs/heads/main/imgs/Screenshot_2.png">
+    <img src="https://github.com/NicolasChirazawa/automacao-cotas-investimento/blob/main/docs/source/_static/images/Screenshot_2.png">
   </details>
 
 ---
@@ -141,7 +141,7 @@ Resultados gerados:
 
   <details>
     <summary>Demonstração;</summary>
-    <img src="https://raw.githubusercontent.com/NicolasChirazawa/automacao-cotas-investimento/refs/heads/main/imgs/Screenshot_3.png">
+    <img src="https://github.com/NicolasChirazawa/automacao-cotas-investimento/blob/main/docs/source/_static/images/Screenshot_3.png">
   </details>
 
 ---
