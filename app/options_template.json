@@ -31,6 +31,12 @@
             "REDEEM_QUOTA": 0
         },
     },
+    "METRICS": {
+        "CDI": {
+            "START_DATE": "1986-03-06", /* Data de início do processamento do CDI */
+            "SOLD_DATE": "2026-03-26" /* Data de fim do processamento do CDI */
+        }
+    },
     "CHARTS": {
         "INVESTMENT_LIST": ["52.324.414/0001-70", "36.966.636/0001-30"],
         "METRICS": { /* Lista com as métricas usadas nos gráficos de valorização */
