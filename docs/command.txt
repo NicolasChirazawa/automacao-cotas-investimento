@@ -1,1 +1,1 @@
-docs\make.bat clean && sphinx-build -M dirhtml docs/source docs/build
+.\make.bat clean && .\make.bat html
