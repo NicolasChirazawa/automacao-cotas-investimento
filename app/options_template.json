@@ -42,7 +42,9 @@
         "METRICS": { /* Lista com as métricas usadas nos gráficos de valorização */
             "CDI": true,
             "Inflacao": false
-        }
+        },
+        "START_DATE": "2024-01-01", /* Data do início da análise, dados de valorização, seja dos investimentos ou métricas precisam começar no mesmo ponto */ 
+        "END_DATE": "2026-01-01"
     },
     "REDEEM": {
         "INVESTMENT": "52.324.414/0001-70",
