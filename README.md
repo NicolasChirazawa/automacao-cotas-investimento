@@ -152,14 +152,14 @@ Resultados gerados:
 Principais diretórios:
 - `app/data` → contém todos os dados processados
 - `app/src/spreadsheets/` → coleta e processamento de dados
-- `app/src/graphics/` → geração de gráficos
+- `app/src/charts/` → geração de gráficos
 - `app/src/redeem/` → simulação de resgate
 - `app/src/utils/` → herpers e funções auxiliares
 - `docs` → documentação do projeto
 
 ├── app/
 │   ├── src/
-│   │   ├── graphics/
+│   │   ├── charts/
 │   │   │   ├── quota_metric_valuation.ipynb
 │   │   │   └── quota_price_evolution.ipynb
 │   │   ├── redeem/
