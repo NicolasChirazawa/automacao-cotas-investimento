@@ -1,20 +1,17 @@
-Project Structure
-=================
+.. _charts_quota_valuation:
+
+Charts
+======
 
 Features Relation
 -----------------
-
-.. image:: _static/images/image.png
-   :alt: Project Structure
-   :align: center
-   :width: 700px
 
 
 .. grid:: 1
    :gutter: 3
 
    .. grid-item-card:: 
-        :doc:`Spreedsheets <Spreedsheets>`
+
 
       Author in reStructuredText or MyST Markdown to create highly structured technical documents.
 

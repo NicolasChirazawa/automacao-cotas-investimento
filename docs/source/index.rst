@@ -1,7 +1,7 @@
-Welcome to documentation!
-=========================
+Welcome to the Documentation!
+=============================
 
-*Precise, fast, and personality analysis*
+*Precise, fast, and reliable data analysis*
 
 |python| |jupyter| |sphinx|
 
@@ -9,65 +9,78 @@ Overview
 --------
 A project that **automatically gathers, processes, and analyzes investment fund data**.
 
-The objective is to create a solid foundation for historical analysis, data visualization, and investment simulations.
+The objective is to provide a solid foundation for historical analysis, data visualization, and investment simulations.
 
-Pre-requisits
+
+Prerequisites
 -------------
 
-1.  Required software: 
+- **Required software:**
 
-- `Python <https://www.python.org/downloads/>`_
+  - `Python <https://www.python.org/downloads/>`_
 
-.. note::
-    It is recommended to use `Visual Studio Code <https://code.visualstudio.com/>`_, as it provides excellent support for Jupyter Notebooks.
+  .. note::
+     It is recommended to use `Visual Studio Code <https://code.visualstudio.com/>`_, as it provides excellent support for Jupyter Notebooks.
 
-2.  Access to the project
+- **Access to the project**
 
-Clone the repository:
+  Clone the repository:
 
-.. code-block:: console
-    
-    # Command to clone the project
-    git clone https://github.com/NicolasChirazawa/automacao-cotas-investimento.git
+  .. code-block:: console
 
-Or download the `.zip` repository from 'GitHub'.
+     git clone https://github.com/NicolasChirazawa/automacao-cotas-investimento.git
 
-3.  Install all the dependencies
+ㅤ Or download the ``.zip`` file from GitHub.
 
-The project includes a ``requirements.txt`` file in the root directory containing all required dependencies.
+- **Install dependencies**
 
-.. code-block:: console
+  The project includes a ``requirements.txt`` file in the root directory containing all required dependencies.
 
-    pip install -r requirements.txt
+  .. code-block:: console
 
-Next steps
+     pip install -r requirements.txt
+
+
+Next Steps
 ----------
-* **How to Start**
 
-  * :doc:`JSON Configuration <JSON_configuration>`
+**Getting Started**
 
-   * Learn how to configure the project;
-   * 'CONFIG' key;
-   * 'DIR' key;
-   * 'INVESTMENTS' key;
-   * 'CHARTS' key;
-   * 'REDEEM' key;
+- :ref:`JSON Configuration <json_configuration>`
 
-  * :doc:`Project Flow <project_flow>`
+  - Learn how to configure the project
+  - Understand the ``CONFIG`` key
+  - Understand the ``DIR`` key
+  - Understand the ``INVESTMENTS`` key
+  - Understand the ``CHARTS`` key
+  - Understand the ``REDEEM`` key
 
-   * Learn how to configure the project;
-   * 'CONFIG' key;
-   * 'DIR' key;
-   * 'INVESTMENTS' key;
-   * 'CHARTS' key;
-   * 'REDEEM' key;
+- :ref:`Project Flow <project_flow>`
 
-   * Understand how the project is organized;
+  - Understand the project features
+  - Learn how features communicate with each other
+  - Comprehend the overall project structure
+
+- :ref:`Spreadsheet <spreadsheet>`
+
+  - Learn how to use the ``spreadsheet`` feature;
+  - Download and process only the data relevant to you;
+  -  Available ``CVM`` and ``CDI`` data;
+
+- :ref:`Charts <charts>`
+
+  - Learn how to use the ``charts`` feature;
+  - Make various graphs that help the readability of data;
+
+- :ref:`Redeem <redeem>`
+
+  - Learn how to **simulate** investments;
 
 Questions / Comments
 --------------------
-If you have questions about this project, feel free to open an issue on GitHub
+If you have questions about this project, feel free to open an issue on GitHub  
 `here <https://github.com/NicolasChirazawa/automacao-cotas-investimento/issues>`_.
+
 
 .. |python| image:: https://img.shields.io/static/v1?label=%20&labelColor=9cccf4&message=Python&color=grey&style=for-the-badge&logo=python&logoColor=black
    :class: inline
@@ -78,14 +91,19 @@ If you have questions about this project, feel free to open an issue on GitHub
 .. |sphinx| image:: https://img.shields.io/static/v1?label=%20&labelColor=ffffff&message=Sphinx&color=grey&style=for-the-badge&logo=sphinx&logoColor=black
    :class: inline
 
-Next: :doc:`JSON_configuration`
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: Getting Started
 
+   getting_started/JSON_configuration
+   getting_started/project_flow
 
 .. toctree::
-   :titlesonly:
-   :maxdepth: 2
-   :caption: How to start:
-   :includehidden:
+   :maxdepth: 4
+   :hidden:
+   :caption: Modules
 
-   JSON_configuration
-   project_flow
+   modules/spreadsheets/index
+   modules/charts/index
+   modules/redeem/redeem

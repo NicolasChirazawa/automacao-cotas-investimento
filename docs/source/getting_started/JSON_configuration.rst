@@ -11,6 +11,7 @@ This file is divided into five main sections:
 * :ref:`config_section`
 * :ref:`dir_section`
 * :ref:`investments_section`
+* :ref:`metrics_section`
 * :ref:`charts_section`
 * :ref:`redeem_section`
 
@@ -145,6 +146,39 @@ Each investment is identified by its **CNPJ**, using the format:
         }
     }
 
+.. _metrics_section:
+
+METRICS
+-------
+
+Defines the dates processed on the ``.csv``.
+
+**Parameters**
+
+.. list-table::
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Name
+     - Description
+   * - ``START_DATE``
+     - Start date (YYYY-MM-DD)
+   * - ``END_DATE``
+     - End date (YYYY-MM-DD)
+
+**Example**
+
+.. code-block:: json
+
+    {
+      "METRICS": {
+        "CDI": {
+          "START_DATE": "YYYY-MM-DD",
+          "END_DATE": "YYYY-MM-DD"
+        }
+      }
+    }
+
 .. _charts_section:
 
 CHARTS
@@ -205,7 +239,3 @@ Defines the data used for investment simulation.
         "INVESTMENT": "52.324.414/0001-70",
         "DAYS_OFFSET": 5
     }
-
-Prev: :doc:`index`
-
-Next: :doc:`project_flow`
