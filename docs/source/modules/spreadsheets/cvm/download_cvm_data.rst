@@ -12,7 +12,7 @@ Download CVM Data
 Extract options.json data
 -------------------------
 
-CVM data is downloaded using the ``START_DATE`` and ``END_DATE`` parameters defined in ``options.json``.
+CVM data is downloaded using the ``START_DATE`` and ``END_DATE`` parameters in the ``CONFIG`` key defined in ``options.json``.
 
 .. list-table::
    :widths: 25 75
