@@ -16,7 +16,7 @@ project = 'automacao-cotas-investimento'
 copyright = 'Fernandes, Nicolas'
 author = 'Fernandes, Nicolas'
 
-# The full version, including aplha/beta/rc tags
+# The full version, including alpha/beta/rc tags
 release = '1.0.0'
 
 # -- General configuration ---------------------------------------------------

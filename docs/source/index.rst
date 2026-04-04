@@ -30,7 +30,7 @@ Prerequisites
 
      git clone https://github.com/NicolasChirazawa/automacao-cotas-investimento.git
 
-ㅤ Or download the ``.zip`` file from GitHub.
+  Or download the ``.zip`` file from GitHub.
 
 - **Install dependencies**
 
@@ -59,27 +59,39 @@ Next Steps
 
   - Understand the project features
   - Learn how features communicate with each other
-  - Comprehend the overall project structure
+  - Understand the overall project structure
+
+**System Modules**
 
 - :ref:`Spreadsheet <spreadsheet>`
 
-  - Learn how to use the ``spreadsheet`` feature;
-  - Download and process only the data relevant to you;
-  -  Available ``CVM`` and ``CDI`` data;
+  - Learn how to use the ``spreadsheet`` feature
+  - Download and process only the data relevant to you
+  - Access available ``CVM`` and ``CDI`` data
 
 - :ref:`Charts <charts>`
 
-  - Learn how to use the ``charts`` feature;
-  - Make various graphs that help the readability of data;
+  - Learn how to use the ``charts`` feature
+  - Generate visualizations to improve data readability
 
 - :ref:`Redeem <redeem>`
 
-  - Learn how to **simulate** investments;
+  - Learn how to **simulate investments**
+
+**Technical Aspects**
+
+- :ref:`Functions <functions>`
+
+  - Understand which functions are used
+
+- :ref:`Classes <classes>`
+
+  - Understand how and why the system uses these classes
 
 Questions / Comments
 --------------------
-If you have questions about this project, feel free to open an issue on GitHub  
-`here <https://github.com/NicolasChirazawa/automacao-cotas-investimento/issues>`_.
+If you have questions about this project, feel free to open an issue on GitHub:  
+`here <https://github.com/NicolasChirazawa/automacao-cotas-investimento/issues>`_
 
 
 .. |python| image:: https://img.shields.io/static/v1?label=%20&labelColor=9cccf4&message=Python&color=grey&style=for-the-badge&logo=python&logoColor=black
@@ -102,8 +114,16 @@ If you have questions about this project, feel free to open an issue on GitHub
 .. toctree::
    :maxdepth: 4
    :hidden:
-   :caption: Modules
+   :caption: System Modules
 
    modules/spreadsheets/index
    modules/charts/index
    modules/redeem/redeem
+
+.. toctree::
+   :maxdepth: 4
+   :hidden:
+   :caption: Technical Aspects
+
+   utils/classes/index
+   utils/functions/index
