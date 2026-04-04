@@ -1,45 +1,56 @@
 .. _charts_quota_valuation:
 
-Charts
-======
+Quota Metric Valuation
+======================
 
-Features Relation
------------------
+* :ref:`extract_json_quota_valuation_sec`
+* :ref:`principal_functions_quota_valuation_sec`
+* :ref:`process_archives_quota_evolution_sec`
+* :ref:`example_charts_quota_valuation_sec`
 
+.. _extract_json_quota_valuation_sec:
 
-.. grid:: 1
-   :gutter: 3
+Extract options.json Data
+-------------------------
 
-   .. grid-item-card:: 
+The charts module uses the dates defined in the ``CHARTS`` key, with the parameters ``START_DATE`` and ``END_DATE``.
 
+.. list-table::
+   :widths: 25 75
+   :header-rows: 1
 
-      Author in reStructuredText or MyST Markdown to create highly structured technical documents.
+   * - Name
+     - Description
+   * - ``START_DATE``
+     - Required parameter (format: YYYY-MM-DD).
+   * - ``END_DATE``
+     - Required parameter (format: YYYY-MM-DD).
+   * - ``INVESTMENT_CNPJ_LIST``
+     - Required parameter (list of CNPJ strings) or empty.
+   * - ``METRICS_DICT``
+     - Required parameter (boolean values: ``true`` or ``false``).
 
-   .. grid-item-card:: 📊 Charts
+.. _principal_functions_quota_valuation_sec:
 
-      Create cross-references within your project and across different projects.
+Functions responsible for data processing
+-----------------------------------------
 
-   .. grid-item-card:: 🌐 Redeem
+The ``METRICS_DICT`` is converted into a list based on a boolean criterion. The resulting list and ``INVESTMENT_CNPJ_LIST`` are then converted into DataFrames.
 
-      Generate documentation in HTML, LaTeX, ePub, and more.
+To inform the user about potential issues due to missing processed data, a function was created to warn when the ``start_date`` of the first dataset differs from the others (both investments and metrics).
 
----
+After that, all DataFrames are merged into a single DataFrame and sorted by date. This final structure is used to build the chart.
 
-`app/ <https://github.com/NicolasChirazawa/automacao-cotas-investimento/tree/main/app>`_
-    Main project directory.
+.. _example_charts_quota_valuation_sec:
 
-    - ``options_template.json``: Template configuration file for project execution.
+Example Chart
+-------------
 
-`app/data/`
-    Stores all generated, processed, and consumed data.
+|example_quota_evolution|
+`Click here to open the image. <https://raw.githubusercontent.com/NicolasChirazawa/automacao-cotas-investimento/refs/heads/main/docs/source/_static/images/Screenshot_2.png>`_
 
-`app/src/ <https://github.com/NicolasChirazawa/automacao-cotas-investimento/tree/main/app/src>`_
-    Contains all project modules.
+.. warning::
+   This section does not describe low-level implementation details. It focuses only on the main components and aspects that may cause confusion.
 
-    - ``charts``: Generates charts for quota price evolution and percentage variation compared to economic indicators.
-    - ``redeem``: Investment simulations based on processed data.
-    - ``spreadsheets``: Generates spreadsheets based on the ``options_template.json`` file.
-    - ``utils``: Classes and functions to standardize project development.
-
-`docs/ <https://github.com/NicolasChirazawa/automacao-cotas-investimento/tree/main/docs/>`_
-    Sphinx documentation files. All ``*.rst`` files compose sections of the documentation.
+.. |example_quota_evolution| image:: ../../_static/images/Screenshot_2.png
+   :class: inline

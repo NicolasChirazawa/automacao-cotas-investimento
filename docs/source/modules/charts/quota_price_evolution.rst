@@ -1,18 +1,18 @@
 .. _charts_quota_evolution:
 
-Quota price Evolution
+Quota Price Evolution
 =====================
 
-* :ref:`extract_json_cvm_download_sec`
-* :ref:`download_archives_cvm_download_sec`
-* :ref:`extracting_archives_cvm_download_sec`
+* :ref:`extract_json_quota_evolution_sec`
+* :ref:`process_archives_quota_evolution_sec`
+* :ref:`example_charts_quota_evolution_sec`
 
-.. _extract_json_cvm_download_sec:
+.. _extract_json_quota_evolution_sec:
 
-Extract options.json data
+Extract options.json Data
 -------------------------
 
-CVM data is downloaded using the ``START_DATE`` and ``END_DATE`` parameters defined in ``options.json``.
+The charts module uses the dates defined in the ``CHARTS`` key, with the parameters ``START_DATE``, ``END_DATE``, and ``INVESTMENT_CNPJ_LIST`` present in the ``options.json`` file.
 
 .. list-table::
    :widths: 25 75
@@ -21,50 +21,34 @@ CVM data is downloaded using the ``START_DATE`` and ``END_DATE`` parameters defi
    * - Name
      - Description
    * - ``START_DATE``
-     - Required parameter (YYYY-MM-DD).
+     - Required parameter (format: YYYY-MM-DD).
    * - ``END_DATE``
-     - Optional parameter (YYYY-MM-DD). If provided, data is downloaded up to this date; otherwise, the current date is used.
+     - Required parameter (format: YYYY-MM-DD).
+   * - ``INVESTMENT_CNPJ_LIST``
+     - Required parameter.
+
+.. _process_archives_quota_evolution_sec:
+
+Process Archives
+----------------
+
+After retrieving the CNPJs from ``INVESTMENT_CNPJ_LIST``, the data is used to locate the processed ``.csv`` files. These files are then converted into dataframes, filtered by ``START_DATE`` and ``END_DATE``.
 
 .. note::
-   If ``END_DATE`` is not present in ``options.json`` during execution, the program automatically updates the file by setting ``END_DATE`` to the current date.
+   For better comparability, all investments should start from the same date. This is typically not an issue, as data is updated on common dates.
 
-Using this information, the program iterates through all months between ``START_DATE`` and ``END_DATE``.
+And combined into a single array used to generate the chart.
 
-.. _download_archives_cvm_download_sec:
+.. _example_charts_quota_evolution_sec:
 
-Download Status
----------------
+Example Chart
+-------------
 
-After downloading archives from CVM in a month-year schema, the program stores the ``.zip`` files in their respective directories on ``/data``.
-
-.. list-table::
-   :widths: 25 75
-   :header-rows: 1
-
-   * - Status
-     - Description
-   * - 200
-     - A ``.zip`` archive is successfully returned for the requested month.
-   * - 404
-     - Link not found. The program logs the corresponding month/year with issues.
-
-.. _extracting_archives_cvm_download_sec:
-
-Extraction Status
------------------
-
-After extracting the archives from the ``.zip`` directory, the program creates a new directory containing all monthly ``.csv`` data on ``/data``.
-
-.. list-table::
-   :widths: 25 75
-   :header-rows: 1
-
-   * - Status
-     - Description
-   * - Success
-     - Archives were successfully extracted.
-   * - Failed
-     - No archives were found in the ``CVM/ZIP`` directory.
+|example_quota_evolution|
+`Click here to open the image. <https://raw.githubusercontent.com/NicolasChirazawa/automacao-cotas-investimento/refs/heads/main/docs/source/_static/images/Screenshot_1.png>`_
 
 .. warning::
-   This section does not describe low-level implementation details. It focuses only on the main components and on aspects that may cause confusion.
+   This section does not describe low-level implementation details. It focuses only on the main components and aspects that may cause confusion.
+
+.. |example_quota_evolution| image:: ../../_static/images/Screenshot_1.png
+   :class: inline
