@@ -194,18 +194,20 @@ Defines the data used to generate charts.
 
    * - Name
      - Description
-   * - ``INVESTMENT_LIST``
-     - List of selected investments
-   * - ``METRICS``
-     - Selected metrics for the valuation chart
+   * - ``INVESTMENT_CNPJ_LIST``
+     - List of selected CNPJ investments
+   * - ``METRICS_DICT``
+     - An object with metrics with a boolean criterion to be selected
+
+The reason the first is a list and the second is a dictionary lies in the program’s design. Investments are selected and built based on the ``options.json``, while the metrics are managed through a dedicated directory.
 
 **Example**
 
 .. code-block:: json
 
     "CHARTS": {
-        "INVESTMENT_LIST": ["52.324.414/0001-70", "36.966.636/0001-30"],
-        "METRICS": {
+        "INVESTMENT_CNPJ_LIST": ["52.324.414/0001-70", "36.966.636/0001-30"],
+        "METRICS_DICT": {
             "CDI": true,
             "Inflacao": false
         }
