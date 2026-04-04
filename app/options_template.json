@@ -38,8 +38,8 @@
         }
     },
     "CHARTS": {
-        "INVESTMENT_LIST": ["52.324.414/0001-70", "36.966.636/0001-30"],
-        "METRICS": { /* Lista com as métricas usadas nos gráficos de valorização */
+        "INVESTMENT_CNPJ_LIST": ["52.324.414/0001-70", "36.966.636/0001-30"],
+        "METRICS_DICT": { /* Dicionário com as métricas usadas nos gráficos de valorização */
             "CDI": true,
             "Inflacao": false
         },
