@@ -67,7 +67,8 @@ Copie e cole o mesmo, em seguida, apague o `_template` do nome e configure de ac
 <h2 name="documentacao">Documentação</h2>
 
 A documentação foi desenvolvida usando o 'Sphinx', a fim de proporcionar um formato padrão, e compreensível.
-Ela está disponibilizada dentro da pasta `/docs/source/index.rst`.
+
+Você pode acessar por [aqui](https://nicolaschirazawa.github.io/automacao-cotas-investimento).
 
 ---
 
